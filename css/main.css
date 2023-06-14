@@ -1,0 +1,213 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(Adventurer.woff);
+} 
+
+* {
+    box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header-1{
+    width:100%;
+    background-color: #252329;
+    height: 65px;
+}
+
+.logo{
+    width: 70%;
+    height: auto;
+    float: left;
+}
+
+.header-2{
+    background-color: #fffdfd;
+    width: 100%;
+    border-bottom: 3px solid #efefef;
+}
+
+.menu-urls{
+    height: 80px;
+    border-bottom: 3px solid #efefef;
+}
+
+.Menu {
+    float: right;
+  }
+  
+.Menu ul li{
+    display: inline-block;
+    color: #8b8b8b;
+    margin-left: 10px;
+    height: 50px; 
+}
+
+.persona{
+    display: inline-block;
+    color: #8b8b8b;
+    margin-left: 75px;
+    height: 50px; 
+    font-size: 25px;
+}
+
+.Menu ul li:houver{
+    border-bottom: 3px solid #00bac6;
+}
+
+.menu ul li a:houver{
+    color:#00bac6;
+} 
+
+
+.Menu ul li a{
+    color: #8b8b8b;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase ;    
+}    
+
+img {
+    width: 65px;
+    height: 65px;
+}
+
+header.logo:hover
+header .imagem-botão:hover
+main .cartao-personagens:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+main{
+    padding: 25px;
+}
+
+  
+.img-jogo{
+    margin-bottom: 30px;
+    margin-right: 200px;
+    width: 600px;
+    height: 400px;
+}
+
+
+/*SCROLLBAR*/
+*::-webkit-scrollbar{
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track{
+    background-color: #f1e9e9;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: #582965;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
+
+/*CARDS*/
+
+
+main.cards {
+    display: flex;
+    padding: 32px;
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 468px;
+    margin-left: 32px;
+}
+
+main.cards section.card:first-child {
+    margin-left: 0;
+}
+
+main.cards section.card .icon {
+    width: 64px;
+    height: 64px;
+}
+
+main.cards section.card img {
+    width: 100%;
+}
+
+main.cards section.card h3 {
+    font-size: 100%;
+    margin: 16px 0;
+}
+
+main.cards section.card span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+main.cards section.card {
+    box-shadow: 20px 20px 50px -30px #AFD6FF;
+}
+
+@media screen and (max-width: 720px) {
+    main.cards {
+        flex-direction: column;
+    }
+
+    main.cards section.card {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    main.cards section.card:last-child {
+        margin-bottom: 0;
+    }
+
+    main.cards section.card button {
+        font-size: 70%;
+    }
+
+}
+
+
+.name-p{
+    margin-left: 15px;
+    position: absolute;
+    display: inline-block;
+    font-family: myFirstFont;
+    color: white;
+    font-size: 30px;
+}
+
+.link{
+    padding: 10px 20px;
+    font-size: 22px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(2, 0, 0);
+    background-color:rgba(139, 24, 68, 0.336);
+    transition: all 0.25s ease-in-out;
+}
+
+.link:hover{
+    background-color: rgb(80, 17, 17);
+    color: rgb(1, 1, 1);
+}
